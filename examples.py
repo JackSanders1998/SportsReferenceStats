@@ -19,7 +19,7 @@ df.set_index(['game'])
 
 
 df.set_index(['game']).style.applymap(color_negative_values).set_caption("Trail Blazers Games").background_gradient(cmap='coolwarm', subset='wins')
-print(df.wins[1])
+df.wins
 # # json = df.to_json() 
 # # print(json) 
 
