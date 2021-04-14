@@ -1,0 +1,9 @@
+"0","if (!require(""pacman"")) install.packages(""pacman"")"
+"2","Loading required package: pacman
+"
+"0","## Note: The `p_load()` function from the pacman package is a convenient way to "
+"0","## install (if necessary) and load packages all at once. You can think of this"
+"0","## as an alternative to the normal `library(ggplot2); library(here);...` way of"
+"0","## loading R packages."
+"0","library(pacman)"
+"0","pacman::p_load(ggplot2, here, readr, dplyr, Stat2Data)"

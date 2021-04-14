@@ -1,0 +1,52 @@
+"0","# Plot code here"
+"0","s2017 = nba[nba$season=='2017-18',]"
+"0","s2017 = s2017[s2017$pts>20,]"
+"0","avg = mean(s2017$net_rating)"
+"0","print(avg)"
+"1","[1]"
+"1"," 4.381481"
+"1","
+"
+"0","theme_set(theme_minimal())"
+"0","ggplot(s2017, aes(x=net_rating, y=player_name, col = ifelse(net_rating > avg,'above average','below average'))) +"
+"0","  geom_point() + "
+"0","  geom_smooth(method=lm, se=FALSE) +"
+"0","  theme(legend.position=""right"") + "
+"0","  labs(subtitle=""Net (+/-) of NBA players scoring more than 20 points per game"", "
+"0","       y=""Player Name"", "
+"0","       x=""Net Rating (+/-)"","
+"0","       col=""Avg rating ~= 4.4"","
+"0","       title=""Scatterplot"", "
+"0","       caption = ""Source: nba"") +"
+"0","ggplot(s2017, aes(x=net_rating, y=player_name, col = ifelse(net_rating > avg,'above average','below average'))) +"
+"0","  geom_point() + "
+"0","  geom_smooth(method=lm, se=FALSE) +"
+"0","  theme(legend.position=""right"") + "
+"0","  labs(subtitle=""Net (+/-) of NBA players scoring more than 20 points per game"", "
+"0","       y=""Player Name"", "
+"0","       x=""Net Rating (+/-)"","
+"0","       col=""Avg rating ~= 4.4"","
+"0","       title=""Scatterplot"", "
+"0","       caption = ""Source: nba"") +"
+"0",""
+"2","Error: Incomplete expression: ggplot(s2017, aes(x=net_rating, y=player_name, col = ifelse(net_rating > avg,'above average','below average'))) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE) +
+  theme(legend.position=""right"") + 
+  labs(subtitle=""Net (+/-) of NBA players scoring more than 20 points per game"", 
+       y=""Player Name"", 
+       x=""Net Rating (+/-)"",
+       col=""Avg rating ~= 4.4"",
+       title=""Scatterplot"", 
+       caption = ""Source: nba"") +
+ggplot(s2017, aes(x=net_rating, y=player_name, col = ifelse(net_rating > avg,'above average','below average'))) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE) +
+  theme(legend.position=""right"") + 
+  labs(subtitle=""Net (+/-) of NBA players scoring more than 20 points per game"", 
+       y=""Player Name"", 
+       x=""Net Rating (+/-)"",
+       col=""Avg rating ~= 4.4"",
+       title=""Scatterplot"", 
+       caption = ""Source: nba"") +
+"

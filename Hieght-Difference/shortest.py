@@ -13,11 +13,11 @@ def get_height_in_feet(height):
     inches = 12 * (height % 1)
     return int(feet) * 12 + int(inches)
 
-def get_height_in_feet(height):
-    height = height / 12
-    feet = round(height - (height % 1))
-    inches = round(12 * (height % 1))
-    return feet, inches
+# def get_height_in_feet(height):
+#     height = height / 12
+#     feet = round(height - (height % 1))
+#     inches = round(12 * (height % 1))
+#     return feet, inches
 
 def print_players(team_heights):
     tallest_player = max(team_heights, key=team_heights.get)

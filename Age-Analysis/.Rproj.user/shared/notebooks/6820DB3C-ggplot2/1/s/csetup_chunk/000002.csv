@@ -1,0 +1,3 @@
+"0","## These next lines set the default behavior for all R chunks in the .Rmd document."
+"0","knitr::opts_chunk$set(echo = TRUE) ## Show all R output"
+"0","knitr::opts_chunk$set(cache=TRUE) ## Cache the results to increase performance."
